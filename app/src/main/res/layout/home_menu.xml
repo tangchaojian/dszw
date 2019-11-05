@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/mTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/bg.red">
+
+        <FrameLayout
+            android:id="@+id/mBackView"
+            android:layout_width="45.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_arrow_left_white"/>
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/mTvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="赌神之王"/>
+
+        <TextView
+            android:id="@+id/mTvAuthorize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10.0dip"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="授权"/>
+
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mTitleView"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/mContentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ui="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="net.yundingwei.dszw.app.home.model.PaohuziEntity"/>
+
+        <variable
+            name="fragment"
+            type="net.yundingwei.dszw.app.home.view.MenuFragment"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="300.0dip"
+            android:layout_height="500.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_radius_box_gray"
+            android:padding="10.0dip">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <net.yundingwei.dszw.app.common.widgets.gridview.FullGridView
+                        android:id="@+id/mGridView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:cacheColorHint="#00000000"
+                        android:listSelector="#00000000"
+                        android:numColumns="6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#808080"
+                        android:layout_marginLeft="5.0dip"
+                        android:text="已选中"/>
+
+                    <net.yundingwei.dszw.app.common.widgets.viewgroup.WrapwordLayout
+                        android:id="@+id/mWLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        ui:horizontalSpacing="10.0dip"
+                        ui:verticalSpacing="10.0dip" />
+
+                    <net.yundingwei.dszw.app.common.widgets.viewgroup.TouchLinearLayout
+                        android:layout_width="70.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:background="@drawable/shape_radius_button_gray"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:onClick="@{(view)->fragment.onButtonClick(2, 0)}">
+
+                        <CheckBox
+                            android:layout_width="10.0dip"
+                            android:layout_height="10.0dip"
+                            android:background="@drawable/selector_checkbox"
+                            android:button="@null"
+                            android:checked="@{model.checked1}" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="智能选牌"
+                            android:textColor="#808080"
+                            android:textSize="10sp" />
+
+                    </net.yundingwei.dszw.app.common.widgets.viewgroup.TouchLinearLayout>
+
+                    <Button
+                        android:layout_width="70.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_marginBottom="20.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:background="@drawable/shape_radius_button_blue"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:text="确认选牌"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp"
+                        android:onClick="@{(view)->fragment.onButtonClick(2, 1)}"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+
+    </FrameLayout>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/mTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/bg.red">
+
+        <TextView
+            android:id="@+id/mTvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="赌神之王"/>
+
+        <TextView
+            android:id="@+id/mTvAuthorize"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:layout_gravity="center_vertical|right"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="授权" />
+
+
+    </FrameLayout>
+
+    <GridView
+        android:id="@+id/mGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mTitleView"
+        android:numColumns="4"
+        android:overScrollMode="never" />
+</RelativeLayout>

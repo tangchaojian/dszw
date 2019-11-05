@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwitchButton">
+        <attr name="switch_thumb_drawable" format="reference"/>
+        <attr name="switch_thumb_color" format="color|reference"/>
+        <attr name="switch_thumb_margin" format="dimension|reference"/>
+        <attr name="switch_thumb_marginTop" format="dimension|reference"/>
+        <attr name="switch_thumb_marginBottom" format="dimension|reference"/>
+        <attr name="switch_thumb_marginLeft" format="dimension|reference"/>
+        <attr name="switch_thumb_marginRight" format="dimension|reference"/>
+        <attr name="switch_thumb_width" format="dimension|reference"/>
+        <attr name="switch_thumb_height" format="dimension|reference"/>
+        <attr name="switch_thumb_radius" format="dimension|reference"/>
+        <attr name="switch_back_radius" format="dimension|reference"/>
+        <attr name="switch_back_drawable" format="reference"/>
+        <attr name="switch_back_color" format="color|reference"/>
+        <attr name="switch_fade_back" format="boolean"/>
+        <attr name="switch_back_measure_ratio" format="float"/>
+        <attr name="switch_animation_duration" format="integer"/>
+        <attr name="switch_tint_color" format="color|reference"/>
+        <attr name="switch_text_on" format="string"/>
+        <attr name="switch_text_off" format="string"/>
+        <attr name="switch_text_marginH" format="dimension"/>
+        <attr name="switch_autoAdjustTextPosition" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="WrapwordLayout">
+        <!--标签之间左右距离-->
+        <attr name="horizontalSpacing" format="reference|dimension" />
+        <!--标签行距-->
+        <attr name="verticalSpacing" format="reference|dimension" />
+    </declare-styleable>
+
+</resources>
