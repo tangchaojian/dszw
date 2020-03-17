@@ -9,7 +9,8 @@ import net.yundingwei.dszw.R;
 public class Constants {
 
 //    public static String HOST_URL = "http://www.dingweiyun.net/dszw/index.php";
-    public static String HOST_URL = "http://www.basketballink.com/dszw/index.php";
+//    public static String HOST_URL = "http://www.basketballink.com/dszw/index.php";
+    public static String HOST_URL = "http://47.112.202.188/dszw//index.php";
 
     public static int[] puke = {
             R.drawable.a_hei, R.drawable.er_hei, R.drawable.san_hei, R.drawable.si_hei,

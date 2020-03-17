@@ -50,7 +50,7 @@
                 android:paddingRight="5.0dip"
                 android:singleLine="true"
                 android:maxLines="1"
-                android:inputType="number"
+                android:inputType="text"
                 tools:text="123456"/>
 
         </FrameLayout>

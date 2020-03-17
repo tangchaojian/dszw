@@ -2,7 +2,8 @@
 <resources>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="bg.red">#D90000</color>
+    <color name="bg_red">#D90000</color>
+    <color name="bg_blue">#0075BB</color>
 
     <color name="switch_ripple_normal">#1E000000</color>
     <color name="switch_ripple_checked">#33019285</color>

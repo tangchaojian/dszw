@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10.0dip"
-                android:textColor="#DA0A0A"
+                android:textColor="@color/bg_blue"
                 android:textSize="14sp"
                 android:text="@{item.name}"/>
 
